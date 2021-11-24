@@ -6,6 +6,7 @@
     "UiPath.Excel.Activities": "[2.11.4]",
     "UiPath.Mail.Activities": "[1.12.2]",
     "UiPath.System.Activities": "[21.10.2]",
+    "UiPath.Testing.Activities": "[1.4.3]",
     "UiPath.UIAutomation.Activities": "[21.10.3]"
   },
   "webServices": [],
@@ -38,7 +39,14 @@
     "processOptions": {
       "ignoredFiles": []
     },
-    "fileInfoCollection": [],
+    "fileInfoCollection": [
+      {
+        "editingStatus": "InProgress",
+        "testCaseId": "aa72f062-f2e8-4a76-8563-2b3589ced83d",
+        "dataVariationFilePath": ".variations\\JassaaGitt_Ark1.json",
+        "fileName": "SubScript\\TestCase.xaml"
+      }
+    ],
     "modernBehavior": false
   },
   "expressionLanguage": "VisualBasic",
