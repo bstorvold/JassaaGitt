@@ -1,12 +1,12 @@
 <Activity mc:Ignorable="sap sap2010" x:Class="UnderProsess" this:UnderProsess.in_forsteVerdi="Hare" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:this="clr-namespace:" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
   <x:Members>
     <x:Property Name="in_forsteVerdi" Type="InArgument(x:String)" />
-    <x:Property Name="out_antallTegn" Type="OutArgument(x:Int32)" />
+    <x:Property Name="out_verdi" Type="OutArgument(x:Int32)" />
   </x:Members>
   <VisualBasic.Settings>
     <x:Null />
   </VisualBasic.Settings>
-  <sap:VirtualizedContainerService.HintSize>1107,797</sap:VirtualizedContainerService.HintSize>
+  <sap:VirtualizedContainerService.HintSize>1107,827</sap:VirtualizedContainerService.HintSize>
   <sap2010:WorkflowViewState.IdRef>UnderProsess_1</sap2010:WorkflowViewState.IdRef>
   <TextExpression.NamespacesForImplementation>
     <scg:List x:TypeArguments="x:String" Capacity="23">
@@ -64,7 +64,7 @@
       <AssemblyReference>UiPath.Workflow</AssemblyReference>
     </scg:List>
   </TextExpression.ReferencesForImplementation>
-  <Sequence sap2010:Annotation.AnnotationText="får inn tekststreng&#xD;&#xA;Skal returnere resultatet som antall tegn i teksten&#xD;&#xA;" DisplayName="UnderProsess" sap:VirtualizedContainerService.HintSize="304,309" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence sap2010:Annotation.AnnotationText="får inn tekststreng&#xA;Skal returnere resultatet som antall tegn i teksten&#xA;" DisplayName="UnderProsess" sap:VirtualizedContainerService.HintSize="304,309" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <Sequence.Variables>
       <Variable x:TypeArguments="x:String" Name="deBug" />
     </Sequence.Variables>
@@ -76,7 +76,7 @@
     </sap:WorkflowViewStateService.ViewState>
     <Assign sap:VirtualizedContainerService.HintSize="262,60" sap2010:WorkflowViewState.IdRef="Assign_1">
       <Assign.To>
-        <OutArgument x:TypeArguments="x:Int32">[out_antallTegn]</OutArgument>
+        <OutArgument x:TypeArguments="x:Int32">[out_verdi]</OutArgument>
       </Assign.To>
       <Assign.Value>
         <InArgument x:TypeArguments="x:Int32">[in_forsteVerdi.Length]</InArgument>
